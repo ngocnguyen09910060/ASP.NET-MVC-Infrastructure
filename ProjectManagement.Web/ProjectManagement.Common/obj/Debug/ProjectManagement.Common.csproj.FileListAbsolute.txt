@@ -1,0 +1,4 @@
+D:\CÔNG TY\0. Core project exam\ASP.NET-MVC-Infrastructure\ProjectManagement.Web\ProjectManagement.Common\bin\Debug\ProjectManagement.Common.dll
+D:\CÔNG TY\0. Core project exam\ASP.NET-MVC-Infrastructure\ProjectManagement.Web\ProjectManagement.Common\bin\Debug\ProjectManagement.Common.pdb
+D:\CÔNG TY\0. Core project exam\ASP.NET-MVC-Infrastructure\ProjectManagement.Web\ProjectManagement.Common\obj\Debug\ProjectManagement.Common.dll
+D:\CÔNG TY\0. Core project exam\ASP.NET-MVC-Infrastructure\ProjectManagement.Web\ProjectManagement.Common\obj\Debug\ProjectManagement.Common.pdb

@@ -1,7 +1,11 @@
 ﻿using ProjectManagement.Data;
+using ProjectManagement.Data.Logging;
+using ProjectManagement.Web.App_Start;
+using ProjectManagement.Web.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -22,6 +26,9 @@ namespace ProjectManagement.Web
             Database.SetInitializer<ApplicationDbContext>(new ApplicationDbInitializer());
             ApplicationDbContext db = new ApplicationDbContext();
             db.Database.Initialize(true);
+
+            // Init logging.
+            // LoggingConfig.RegisterLoggingSources(new List<EventSource> { WebEventSource.Log, DataEventSource.Log },???);
 
             AreaRegistration.RegisterAllAreas();
 

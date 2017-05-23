@@ -1,0 +1,7 @@
+bin/*
+/ProjectManagement.Web/ProjectManagement.Common/bin
+/ProjectManagement.Web/ProjectManagement.Common/obj
+/ProjectManagement.Web/ProjectManagement.Data/bin
+/ProjectManagement.Web/ProjectManagement.Data/obj
+/ProjectManagement.Web/ProjectManagement.Web/obj
+/ProjectManagement.Web/ProjectManagement.Web/bin

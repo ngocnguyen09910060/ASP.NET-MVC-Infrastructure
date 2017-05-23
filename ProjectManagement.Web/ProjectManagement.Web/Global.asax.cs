@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ProjectManagement.Data;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -16,6 +18,11 @@ namespace ProjectManagement.Web
     {
         protected void Application_Start()
         {
+            // Create database.
+            Database.SetInitializer<ApplicationDbContext>(new ApplicationDbInitializer());
+            ApplicationDbContext db = new ApplicationDbContext();
+            db.Database.Initialize(true);
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

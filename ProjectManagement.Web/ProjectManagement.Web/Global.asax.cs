@@ -1,4 +1,5 @@
-﻿using ProjectManagement.Data;
+﻿using ProjectManagement.Common.Settings;
+using ProjectManagement.Data;
 using ProjectManagement.Data.Logging;
 using ProjectManagement.Web.App_Start;
 using ProjectManagement.Web.Logging;
@@ -28,7 +29,8 @@ namespace ProjectManagement.Web
             db.Database.Initialize(true);
 
             // Init logging.
-            // LoggingConfig.RegisterLoggingSources(new List<EventSource> { WebEventSource.Log, DataEventSource.Log },???);
+            LoggingConfig.RegisterLoggingSources(new List<EventSource> { WebEventSource.Log, DataEventSource.Log },
+                (ICommonSettings)NinjectWebCommon.Kernel.GetService(typeof(ICommonSettings)));
 
             AreaRegistration.RegisterAllAreas();
 
